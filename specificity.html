@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        * {
+            color: forestgreen;
+        }
+        p {
+            color: blue;
+        }
+        .my-para {
+            color: chocolate;
+        }
+        #para-4, #para-5, #para6 {
+            color: blueviolet;
+        }
+        #para-6 {
+            color: deepskyblue !important;
+        }
+    </style>
+</head>
+<body>
+    <p>My Paragraph 1</p>
+    <p>My Paragraph 2</p>
+    <p class="my-para">My Paragraph 3</p>
+    <p class="my-para" id="para-4">My Paragraph 4</p>
+    <p class="my-para" id="para-5" style="color: brown;">My Paragraph 5</p>
+    <p class="my-para" id="para-6" style="color: brown;">My Paragraph 6</p>
+</body>
+</html>
